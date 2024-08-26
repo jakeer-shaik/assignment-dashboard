@@ -1,0 +1,108 @@
+{
+  "categories": [
+    {
+      "id": "cspm",
+      "name": "CSPM Executive Dashboard",
+      "widgets": [
+        {
+          "id": "cloud-accounts",
+          "name": "Cloud Accounts",
+          "chartType": "Doughnut",
+          "data": {
+            "labels": ["Connected", "Not Connected"],
+            "datasets": [
+              {
+                "data": [2, 2],
+                "backgroundColor": ["#3b82f6", "#dbeafe"]
+              }
+            ]
+          }
+        },
+        {
+          "id": "risk-assessment",
+          "name": "Risk Assessment",
+          "chartType": "Doughnut",
+          "data": {
+            "labels": ["Failed", "Warning", "Not Available", "Passed"],
+            "datasets": [
+              {
+                "data": [1689, 681, 136, 7253],
+                "backgroundColor": ["#ef4444", "#fbbf24", "#9ca3af", "#10b981"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cwpp",
+      "name": "CWPP Dashboard",
+      "widgets": [
+        {
+          "id": "top-5",
+          "name": "Top 5 Name space",
+          "chartType": "Bar",
+          "data": {
+            "labels": ["Connected", "Not Connected"],
+            "datasets": [
+              {
+                "label": "Accounts",
+                "data": [2, 2],
+                "backgroundColor": ["#3b82f6", "#dbeafe"]
+              }
+            ]
+          }
+        },
+        {
+          "id": "work-load",
+          "name": "WorkLoad Alert",
+          "chartType": "Bar",
+          "data": {
+            "labels": ["Failed", "Warning", "Not Available", "Passed"],
+            "datasets": [
+              {
+                "label": "Risk Assessment",
+                "data": [1689, 681, 36, 7253],
+                "backgroundColor": ["#ef4444", "#fbbf24", "#9ca3af", "#10b981"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "registry-scan",
+      "name": "Registry Scan",
+      "widgets": [
+        {
+          "id": "image-risk-assessment",
+          "name": "Image Risk Assessment",
+          "chartType": "Pie",
+          "data": {
+            "labels": ["Critical", "High", "Medium"],
+            "datasets": [
+              {
+                "data": [9, 160, 500],
+                "backgroundColor": ["#ef4444", "#fbbf24", "#3b82f6"]
+              }
+            ]
+          }
+        },
+        {
+          "id": "remediation",
+          "name": "Remediation",
+          "chartType": "Pie",
+          "data": {
+            "labels": ["Fixed", "Open"],
+            "datasets": [
+              {
+                "data": [124, 312],
+                "backgroundColor": ["#10b981", "#ef4444"]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
